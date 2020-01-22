@@ -13,4 +13,4 @@ jobs:
       run: |
         npm install --progress=false
         npm run-script build
-        gh-pages --dist build
+        npm run deploy
