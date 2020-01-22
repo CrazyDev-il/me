@@ -1,0 +1,15 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Install and configure dependencies
+      run: |
+        npm install --progress=false
+        npm run-script build
+        gh-pages --dist build
