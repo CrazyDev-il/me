@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Install and configure dependencies
       run: |
-        cd me
+        checkout
         npm install --progress=false
         npm run-script build
         gh-pages --dist build
