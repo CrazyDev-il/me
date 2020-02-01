@@ -15,5 +15,5 @@ jobs:
         npm run-script build
         git config --global user.email "chandrasekhartiwari@gmail.com"
         git config --global user.name "CrazyDev-il"
-        git remote set-url origin https://28eb6fcb092bda6a8c48b96c73666cc11da156b4@github.com/CrazyDev-il/me.git
+        git remote set-url origin https://CrazyDev-il:sekhar007@github.com/CrazyDev-il/me.git
         npm run deploy
