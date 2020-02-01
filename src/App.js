@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Some Change to check
+          Some Change to check(new)
         </p>
         <a
           className="App-link"
