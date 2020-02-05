@@ -2,9 +2,9 @@ import React from 'react';
 import './App.scss';
 import Header from './components/header/header';
 import crawler from './images/crawler.svg';
+import Container from '../src/components/container/Container';
 
 function App() {
-  console.log(window.clientX);
   return (
     <div className="App">
       <Header></Header>
@@ -14,6 +14,7 @@ function App() {
           {/* <div>Some Content</div> */}
         </div>
       </div>
+      <Container></Container>
     </div>
   );
 }
