@@ -1,4 +1,6 @@
 import React from 'react';
+import spiderweb from '../../images/spider.svg';
+import './Container.scss';
 
 export default class Container extends React.Component {
 	constructor(props) {
@@ -21,8 +23,8 @@ export default class Container extends React.Component {
     }
     render() {
         return (
-            <div ref={this.containerRef} style={{ height: '100%', flex: 1}} onMouseMove={this.onMouseMove.bind(this)}>
-                <img className="3dIcon" style={{ transform: this.state.transformIcon, position: 'relative', top: '200px'}} src="https://img.icons8.com/pastel-glyph/64/000000/blood-sample.png" /> 
+            <div ref={this.containerRef} className="container" onMouseMove={this.onMouseMove.bind(this)}>
+                <img className="moving-spider" style={{ transform: this.state.transformIcon }} src={spiderweb} /> 
             </div>
         );
     }

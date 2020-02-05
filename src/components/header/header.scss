@@ -1,18 +1,47 @@
 .main-header {
     height: 60px;
     display: flex;
-    background-color: cadetblue;
+    background-color: honeydew;
 }
 
 .header-container{
     flex: 1;
 }
 
-.image-container {
-    width: 60px;
+.links-holder {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    a {
+        color: rgb(34, 2, 2);
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        display: inline-block;
+        position: relative;
+        font-weight: 500;
+        cursor: pointer;
+      }
+      a:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: rgb(34, 2, 2);
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+      a:hover:after { 
+        width: 100%; 
+        left: 0; 
+      }
 }
 
-.spider{
-    height: 50px;
-    margin: 5px;
+.links-holder > div{
+    width: 125px;
+    line-height: 60px;
+    vertical-align: middle;
 }

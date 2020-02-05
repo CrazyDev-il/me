@@ -1,0 +1,13 @@
+.moving-spider{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 125px;
+    transition-duration: 750ms;
+}
+
+.container{
+    height: 100%;
+    flex: 1;
+    background-color: honeydew;
+}
